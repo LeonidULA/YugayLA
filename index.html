@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя экологическая визитка</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -32,24 +33,33 @@
 
     <!-- About Me -->
     <section id="about" class="about-section">
-        <div class="container">
-            <h2>Обо мне</h2>
-            <p>Я аспирант одного из престижных вузов РФ, специализируюсь на устойчивом развитии и экологическом менеджменте...</p>
+        <div class="container split-layout">
+            <div class="text-block">
+                <h2>Кратко обо мне</h2>
+                <p>Я аспирант одного из престижных вузов РФ, специализируюсь на устойчивом развитии и экологическом менеджменте. За свою карьеру я прошел путь от рядового разработчика до руководителя проектов.</p>
+            </div>
+            <div class="image-block">
+                <img src="assets/photo.jpg" alt="Фото">
+            </div>
         </div>
     </section>
 
-    <!-- Projects/Services -->
+    <!-- Projects -->
     <section id="projects" class="projects-section">
         <div class="container">
             <h2>Мои проекты</h2>
-            <div class="project-cards">
-                <div class="card">
+            <div class="project-grid">
+                <div class="project-card">
                     <h3>Мониторинг CO2</h3>
                     <p>Разработка системы для снижения выбросов углекислого газа.</p>
                 </div>
-                <div class="card">
+                <div class="project-card">
                     <h3>Переработка отходов</h3>
                     <p>Увеличение процента перерабатываемых отходов до 60%.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Водные ресурсы</h3>
+                    <p>Исследование влияния промышленности на качество воды.</p>
                 </div>
             </div>
         </div>
