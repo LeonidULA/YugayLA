@@ -3,34 +3,78 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
     line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #d1e7dd; /* Пастельный зеленый */
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #28a745;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-section {
+    background-color: #d1e7dd;
     text-align: center;
-    padding: 20px;
+    padding: 100px 0;
 }
 
-h1, h2 {
-    color: #28a745; /* Темно-зеленый */
+.main-section h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-section {
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-section, .projects-section, .contacts-section {
+    padding: 50px 0;
+}
+
+.project-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
     padding: 20px;
-    margin: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
+    background-color: #f9f9f9;
     text-align: center;
-    padding: 10px;
-    background-color: #d1e7dd;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
 }
