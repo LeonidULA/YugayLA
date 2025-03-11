@@ -7,26 +7,76 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Добро пожаловать!</h1>
-        <p>Я специалист в области экологии РФ.</p>
+        <div class="container">
+            <h1 class="logo">[Имя Фамилия]</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>Обо мне</h2>
-        <p>Здесь ты можешь рассказать о своем опыте, образовании и достижениях.</p>
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="container">
+            <h2>Специалист в области экологии</h2>
+            <p>Более 5 лет опыта в разработке и управлении экологическими проектами.</p>
+            <a href="#about" class="btn">Подробнее</a>
+        </div>
     </section>
 
-    <section id="portfolio">
-        <h2>Мои проекты</h2>
-        <ul>
-            <li>Проект 1: описание.</li>
-            <li>Проект 2: описание.</li>
-        </ul>
+    <!-- About Me -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <p>Я аспирант одного из престижных вузов РФ, специализируюсь на устойчивом развитии и экологическом менеджменте...</p>
+        </div>
     </section>
 
+    <!-- Projects/Services -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>Мониторинг CO2</h3>
+                    <p>Разработка системы для снижения выбросов углекислого газа.</p>
+                </div>
+                <div class="card">
+                    <h3>Переработка отходов</h3>
+                    <p>Увеличение процента перерабатываемых отходов до 60%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="contacts-section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Контакты: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <div class="container">
+            <p>&copy; 2023 [Имя Фамилия]. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">VK</a>
+                <a href="#">Telegram</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
