@@ -1,11 +1,11 @@
 /* Общие стили */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #2C3E50;
-    background-color: #F4F4F4;
+    color: #1B5E20;
+    background-color: #FAFAFA;
 }
 
 .container {
@@ -14,56 +14,26 @@ body {
     margin: 0 auto;
 }
 
-header {
-    background-color: #1E3A3A;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #2E7D32;
+    margin-bottom: 20px;
 }
 
-.logo {
-    font-size: 24px;
-    color: #D1E7DD;
-    font-weight: bold;
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #D1E7DD;
-    font-weight: bold;
-}
-
-.main-section {
-    background-color: #D1E7DD;
+.hero {
+    background-color: #F5F5DC;
     text-align: center;
     padding: 100px 0;
 }
 
-.main-section h2 {
+.hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #1E3A3A;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #1E3A3A;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.about-section, .projects-section, .contacts-section {
-    padding: 50px 0;
-    background-color: white;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .split-layout {
@@ -72,65 +42,66 @@ header {
     align-items: center;
 }
 
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .text-block {
     flex: 1;
 }
 
-.image-block img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.project-grid {
+.service-grid, .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.project-card {
-    background-color: #F4F4F4;
+.service-card, .project-card {
+    background-color: #F5F5DC;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.project-card h3 {
-    font-size: 24px;
-    color: #1E3A3A;
+.service-card img, .project-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
 }
 
-.contacts-section form {
+.contact-section form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.contacts-section input, .contacts-section textarea {
+.contact-section input, .contact-section textarea {
     padding: 10px;
-    border: 1px solid #D1E7DD;
+    border: 1px solid #81D4FA;
     border-radius: 5px;
 }
 
-.contacts-section button {
+.contact-section button {
     padding: 10px;
-    background-color: #1E3A3A;
+    background-color: #2E7D32;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #1B5E20;
 }
 
 footer {
-    background-color: #1E3A3A;
+    background-color: #2E7D32;
     text-align: center;
     padding: 20px 0;
-    color: #D1E7DD;
-}
-
-.social-links a {
-    color: #D1E7DD;
-    margin: 0 10px;
-    text-decoration: none;
+    color: #FAFAFA;
 }
